@@ -14,11 +14,11 @@ CHANNELS = [
 ]
 
 # ========== CHANNEL LINKS ==========
-PUBLIC_CHANNEL_LINK = "https://t.me/+oQvXSIuRqcE3MGJl"
-PRIVATE_CHANNEL_LINK = "https://t.me/+gtpTMOgX-KA5NjY9"
+PUBLIC_CHANNEL_LINK = "https://t.me/+THF_bNYDmLs2YWU1"
+PRIVATE_CHANNEL_LINK = "https://t.me/+mPjBlQXFvk1iZGFl"
 
 # FINAL PREMIUM PRIVATE CHANNEL LINK
-PREMIUM_CHANNEL_LINK = "https://t.me/+gtpTMOgX-KA5NjY9"
+PREMIUM_CHANNEL_LINK = "https://t.me/+Xaz3zqyhF_43M2U1"
 
 # Start photo (optional)
 START_PHOTO = "Start.jpg"
