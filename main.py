@@ -21,7 +21,7 @@ PRIVATE_CHANNEL_LINK = "https://t.me/+gtpTMOgX-KA5NjY9"
 PREMIUM_CHANNEL_LINK = "https://t.me/+gtpTMOgX-KA5NjY9"
 
 # Start photo (optional)
-START_PHOTO = "https://i.imgur.com/9ZQZ9ZQ.jpg"
+START_PHOTO = "Start.jpg"
 
 # ==========================================
 app = Client(
