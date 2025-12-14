@@ -14,7 +14,7 @@ CHANNELS = [
 ]
 
 # ========== CHANNEL LINKS ==========
-PUBLIC_CHANNEL_LINK = "https://t.me/kirmu7"
+PUBLIC_CHANNEL_LINK = "https://t.me/+oQvXSIuRqcE3MGJl"
 PRIVATE_CHANNEL_LINK = "https://t.me/+gtpTMOgX-KA5NjY9"
 
 # FINAL PREMIUM PRIVATE CHANNEL LINK
@@ -34,8 +34,8 @@ app = Client(
 # ========== JOIN BUTTONS ==========
 JOIN_BUTTONS = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton("📢 Join Public Channel", url=PUBLIC_CHANNEL_LINK)],
-        [InlineKeyboardButton("🔒 Join Private Channel", url=PRIVATE_CHANNEL_LINK)],
+        [InlineKeyboardButton("📢 Join Channel", url=PUBLIC_CHANNEL_LINK)],
+        [InlineKeyboardButton("🔒 Join Channel", url=PRIVATE_CHANNEL_LINK)],
         [InlineKeyboardButton("✅ Joined", callback_data="check_join")]
     ]
 )
@@ -46,9 +46,9 @@ async def start(client, message):
     await message.reply_photo(
         photo=START_PHOTO,
         caption=(
-            "**🚨 JOIN ALL CHANNEL TO CONTINUE 🚨**\n\n"
-            "👉 Pehle niche diye gaye sab channels join karo\n"
-            "👉 Phir **Joined ✅** button dabao"
+            "**🚨 𝗝𝗢𝗜𝗡 𝗔𝗟𝗟 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗧𝗢 𝗖𝗢𝗡𝗧𝗜𝗡𝗨𝗘 🚨**\n\n"
+            "👉 𝗙𝗶𝗿𝘀𝘁 𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗔𝗻𝗱 𝗩𝗲𝗿𝗶𝗳𝘆 \n"
+            "👉 𝗧𝗵𝗲𝗻 𝗖𝗹𝗶𝗰𝗸 𝗢𝗻 **Joined ✅**"
         ),
         reply_markup=JOIN_BUTTONS
     )
@@ -63,13 +63,13 @@ async def check_join(client, callback):
             member = await client.get_chat_member(channel, user_id)
             if member.status in ["left", "kicked"]:
                 await callback.answer(
-                    "❌ Pehle sab channels join karo!",
+                    "❌ 𝗙𝗜𝗥𝗦𝗧 𝗝𝗢𝗜𝗡 𝗔𝗟𝗟 𝗖𝗛𝗔𝗡𝗡𝗘𝗟!",
                     show_alert=True
                 )
                 return
         except:
             await callback.answer(
-                "❌ Channel join nahi kiya!",
+                "❌ JOIN All CHANNEL FIRST!",
                 show_alert=True
             )
             return
