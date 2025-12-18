@@ -30,7 +30,7 @@ ACCESS_CHANNEL_LINKS = [
 ]
 
 # ===== LOCAL IMAGE FILE =====
-START_IMAGE = "start.jpg"
+START_IMAGE = "Start.jpg"
 
 app = Client(
     "force_join_bot",
